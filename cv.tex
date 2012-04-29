@@ -1,0 +1,178 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+% Updated, tweaked and changed by Erik Helin, 2010-2012.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage[margin=0.5in]{geometry}
+
+% Uncomment the following line if you need to enable output in a language
+% different from English.
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{John Doe}
+
+% Width of right margin in tables
+\def\rightcolumnwidth{0.75\linewidth}
+\def\leftcolumnwidth{0.18\linewidth}
+
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {\name, cv, Curriculum Vitae},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+\begin{minipage}{0.7\linewidth}
+{\huge Curriculum Vitae} \hfill {\huge \name}
+\end{minipage}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.23in}
+
+\begin{minipage}{0.51\linewidth}
+  \vspace{-0.2in}
+  1 Infinite Loop \\
+  Cupertino, CA 950414 \\
+  USA
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+  \begin{tabular}{l l}
+    Birthdate: & January 3rd, 1976 \\
+    Phone:     & (877) 412-7753 \\
+    Email:     & \href{mailto:john.doe@gmail.com}{\tt john.doe@gmail.com} \\
+    Code:      & \url{www.github.com/johndoe}
+  \end{tabular}
+\end{minipage}
+
+\section*{Education}
+\begin{tabular}{p{\leftcolumnwidth} p{\rightcolumnwidth}}
+  {\bf 2007 - 2012} & {\bf \emph{Master of Science in Computer Science},
+                      Stanford University}, California, USA \\
+                    & Majoring in Theoretical Computer Science. \\
+                    & \\
+  {\bf 2003 - 2006} & {\bf \emph{Scientific Program}, Foobar High School},
+                      California, USA \\
+                    & Upper secondary school \\
+                    & \\
+  {\bf Summer 2005} & {\bf \emph{Summer school}, Stanford University},
+                      California, USA \\
+                    & A course given to high school students.  Focus of
+                      studies: Biology
+\end{tabular}
+
+\section*{Work experience}
+\begin{tabular}{p{\leftcolumnwidth} p{\rightcolumnwidth}}
+  {\bf 2012 - ongoing} & {\bf \emph{Master Thesis}, Bar Inc},
+                         Rome, Italy, \url{www.barinc.com} \\
+  (March - ongoing)    & Description of work here. If a line is very long then
+                         it will automatically get wrapped. Usually 3 sentences
+                         suffices. \\
+                       & \\
+  {\bf 2008 - 2011}    & {\bf \emph{Software Engineer}, Foobar Technology},
+                         Moscow, Russia, \url{www.foobar.com} \\
+  (Part-time)          & Cool, this work was in Russia. Developed some nice
+                         apps and websites. Used HTML, CSS and JavaScript. \\
+                       & \\
+  {\bf 2010 - 2011}    & {\bf \emph{QA Engineer}, Fooey}, Menlo Park, USA,
+                          \url{www.fooey.com} \\
+  (Sep - Jan)          & Work as QA engineer (another fancy word for working
+                         with testing is SQE, Software Quality Engineer).
+                         Implemented tests. \\
+                       & \\
+  {\bf 2010}           & {\bf \emph{Developer}, Stanford University},
+                          California, \url{www.stanford.edu} \\
+  (Jan - May)          & Large group project in school where I was one of
+                         the developers.
+\end{tabular}
+
+\section*{Other merits}
+\begin{tabular}{p{\leftcolumnwidth} p{\rightcolumnwidth}}
+    {\bf 2007 - 2010} & {\bf \emph{Head of Chess Club}, Computer Science
+                        department, Stanford University} \\
+                      & Organized chess tournaments.
+\end{tabular}
+
+\section*{Awards and achievements}
+\begin{tabular}{p{\leftcolumnwidth} p{\rightcolumnwidth}}
+    {\bf 2006} & {\bf \emph{Fancy scholarship} from
+                  ''Name of fancy organization or school''} \\
+               & Awarded to interested and competent students in mathematics
+                 and Computer Science. Even these lines gets wrapped, no worry!
+\end{tabular}
+
+% If you really want to squeeze everything onto one page, uncomment the
+% following line
+% \nopagebreak[1]
+
+\section*{Languages}
+\begin{tabular}{l l}
+    {\bf English} & Native \\
+    {\bf Russian} & Fluent in both oral and written \\
+    {\bf French}  & I pretend that I know it
+\end{tabular}
+
+\end{document}

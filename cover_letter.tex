@@ -1,0 +1,93 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+% Updated, tweaked and changed by Erik Helin, 2010-2012.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[parfill]{parskip}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{John Doe}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {\name, cover letter},
+  pdftitle = {\name: Cover Letter},
+  pdfsubject = {Cover Letter},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+\begin{document}
+
+\begin{minipage}{0.89\linewidth}
+{\huge \name} \hfill San Fransisco, CA, USA, \today
+\end{minipage}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.23in}
+
+\begin{minipage}{0.51\linewidth}
+  \vspace{-0.2in}
+  1 Infinite Loop \\
+  Cupertino, CA 950414 \\
+  USA
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+  \begin{tabular}{l l}
+    Birthdate: & January 3rd, 1976 \\
+    Phone:     & (877) 412-7753 \\
+    Email:     & \href{mailto:john.doe@gmail.com}{\tt john.doe@gmail.com} \\
+    Code:      & \url{www.github.com/johndoe}
+  \end{tabular}
+\end{minipage}
+
+% Start to write after this line
+Dear Mr/Ms,\\
+I would really like to work for your company!
+
+Best regards,\\
+John Doe
+\end{document}
