@@ -26,7 +26,7 @@ To generate a pdf for the cover lettter, run:
 
     make cover_letter
 
-If you want to remove all files created by LaTeX (as well all pdf files), run:
+If you want to remove all files created by LaTeX (including all pdf files), run:
 
     make clean
 
